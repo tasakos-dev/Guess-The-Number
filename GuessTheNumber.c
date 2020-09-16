@@ -2,7 +2,6 @@
 
 
 
-int guessNum(int l, int h, int *arr, int n);
 
 
 int main()
