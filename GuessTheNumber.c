@@ -22,17 +22,17 @@ int guessNum(int *arr, int n, int l, int h){
 	l=0;
 	h= n-1;
 	int middle= (l+h)/2;
-	printf("%s %d\n", "your number is", arr[midle]);
+	printf("%s %d\n", "your number is", arr[middle]);
 	scanf("%s", ans);
 	if (strcmp(ans,"yes")){
 		return arr[middle];
 	}
 	else if (strcmp(ans, "less")){
-		return guessNum(*arr,n,l, midle);
+		return guessNum(*arr,n,l, middle);
 
 	}
 	else {
-		return guessNum(*arr,n,midle,h);
+		return guessNum(*arr,n,middle,h);
 	}
 
 
